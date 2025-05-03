@@ -1,0 +1,222 @@
+body{
+    font-family: 'Albert Sans',  sans-serif;
+}
+
+/* HEADER */
+header{
+    color: #111679;
+}
+.top-header a{
+    text-decoration: none;
+    font-size: 0.7em;
+    color: #111679;
+}
+.middle-header .icon-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #111679;
+}
+.middle-header .logo {
+    font-size: 3em;
+    font-weight: bold;
+}
+.login-btn {
+    background-color: #001489;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+.line{
+    border-bottom: 1px solid #e0e0e0;
+}
+.lower-header a{
+    font-size: 0,9em;
+    text-decoration: none;
+    color: #111679;
+}
+
+/* ARTICLE */
+.titulos{
+    color: #21233e
+}
+h1{
+    font-size: 3em;
+}
+#date{
+    color: #707488;
+    font-size: .8em;
+}
+#caption{
+    color: #707488;
+    font-size: .85em;
+}
+
+.match {
+    border-collapse: collapse;
+}
+
+.score-row {
+    text-align: center;
+}
+
+.team-logo {
+    width: 30%;
+}
+.team-img{
+    height: 50px;
+}
+
+.team-name {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.team-score {
+    font-size: 3em;
+    font-weight: bold;
+    color: #1a73e8;
+    width: 50px;
+}
+
+.final-text {
+    color: red;
+    font-size: 1em;
+    width: 40px;
+}
+
+.info-row td {
+    background-color: #1a73e8;
+    color: white;
+}
+
+.info-table {
+    width: 100%;
+    font-size: .9em;
+}
+
+.stadium {
+    text-align: left;
+}
+
+.competition {
+    text-align: right;
+
+}
+
+/* formulario */
+.newsletter {
+    background-color: #1a73e8;
+    width: 30%;
+    color: white;
+}
+
+.icon-cell {
+    width: 30px;
+    font-size: 2em;
+}
+
+.text-cell {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.logo-cell {
+    width: 60px;
+}
+
+.champions-logo {
+    height: 40px;
+}
+
+.title-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+.email-input {
+    width: 70%;
+    height: 3em;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: .8em;
+    background-color: #4182e7;
+}
+
+.subscribe-button {
+    border: none;
+    background-color: #0a0a60;
+    color: white;
+    font-weight: bold;
+    border-radius: 0 5px 5px 0;
+    font-size: .8em;
+    height: 3em;
+}
+
+.small-button {
+    border: 2px solid #0b0b66;
+    background: white;
+    color: #0b0b66;
+    border-radius: 5px;
+    font-weight: bold;
+    height: 3em;
+}
+.comments-button {
+    background: #1d66dd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+    font-size: 16px;
+    font-weight: bold;
+    height: 3em;
+}
+
+/* FOOTER */
+.footer {
+    background-color: white;
+    font-size: 12px;
+    color: #11156c;
+    width: 100%;
+}
+
+.footer-table {
+    width: 100%;
+}
+
+.footer-logo b {
+    font-size: 2em;
+}
+
+.footer-logo .social-icons {
+    font-size: 2em;
+}
+
+.links-table {
+    width: 100%;
+}
+
+.links-table td {
+    font-size: 1.1em;
+}
+.line-2 {
+    border-bottom: 1px solid #e0e0e0;
+    width: 70%;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 1.2em;
+    color:#525b6b;
+}
+.footer-column{
+    color: #333;
+}
+.footer-titles{
+    color: #111679;
+    font-size: 1.1em;
+}
+
