@@ -1,194 +1,214 @@
 body {
     font-family: 'Albert Sans', sans-serif;
-}
-
-/* HEADER */
-header {
-    color: #111679;
-}
-
-.top-header {
-    padding: 4.8px;
-    margin: 4.8px;
-}
-
-.top-header a {
-    text-decoration: none;
-    font-size: 11.2px;
-    color: #111679;
-    padding: 6.4px;
-}
-
-.middle-header table {
-    width: 100%;
-}
-
-.middle-header .icon-btn {
-    background: none;
-    border: none;
-    font-size: 18px;
-    color: #111679;
-}
-
-#menu-toggle {
-    display: none;
-}
-
-.middle-header .logo {
-    font-size: 48px;
-    font-weight: bold;
-    font-family: 'Segoe UI', sans-serif;
-    margin-left: 650px;
-}
-
-.login-btn {
-    background-color: #001489;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 12.8px;
-    padding: 8px 12px;
-    gap: 5px;
+    line-height: 1.6;
 }
 
 .line, .line1 {
-    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #ccc;
+    margin: 15px 0;
 }
 
-.lower-header {
-    padding: 2px;
+/* HEADER */
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0px 0px 0px;
 }
 
-.nav-table {
-    margin-left: 500px;
+.top-header-left, .top-header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
-
-.nav-table a {
-    font-size: 11.2px;
+.top-header a{
     text-decoration: none;
+    font-size: 11px;
     color: #111679;
     font-weight: bold;
 }
 
+.logo-text {
+    font-size: 15px;
+    color: #111679;
+    font-weight: bold;
+}
+
+.top-header-right i {
+    font-size: 20px;
+    color: #7a7979;
+}
+
+.middle-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px;
+    background-color: #fff;
+}
+
+.logo {
+    font-size: 47px;
+    font-weight: bold;
+    margin: 0 auto;
+    color: #111679;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #001489;
+}
+
+.notif-count {
+    color: #d31919;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.7rem;
+    vertical-align: top;
+}
+#menu-toggle{
+    display: none;
+}
+.login-btn{
+    background-color: #001489;
+    color: white;
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 10px 15px;
+     border: none;
+}
+
+.lower-header {
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+    color: #001489;
+    font-weight:bold;
+    font-size: 12.5px;
+}
+
 /* ARTICLE */
-.table-article {
-    width: 60%;
-    margin-left: 220px;
+.article {
+    display: flex;
+    justify-content: center;
 }
 
-.titles {
-    color: #21233e;
+.article-container{
+    width: 50%;
+    padding-right: 200px;
 }
-
 h1 {
     font-size: 48px;
 }
-
+.titles {
+    color: #21233e;
+}
 .text {
     font-size: 14.4px;
     line-height: 1.6;
 }
-
 #date {
     color: #707488;
-    font-size: 12.8px;
+    font-size: 12px;
     padding: 30px 0px 20px 0px;
 }
 
 #caption {
     color: #707488;
-    font-size: 13.6px;
+    font-size: 13px;
     padding: 0px 0px 50px 0px;
-}
-
-.match {
-    width: 100%;
-    border: 1px solid #e0e0e0;
-    margin-bottom: 20px;
-}
-
-.score-row {
-    text-align: center;
-    height: 80px;
-}
-
-.team-logo {
-    width: 30%;
-}
-
-.team-img {
-    height: 50px;
-}
-
-.team-name {
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.team-score {
-    font-size: 48px;
-    font-weight: bold;
-    color: #1a73e8;
-    width: 50px;
-}
-
-.final-text {
-    color: red;
-    font-size: 16px;
-    width: 40px;
-}
-
-.info-row td {
-    background-color: #1a73e8;
-    color: white;
-    padding: 4px;
-}
-
-.info-table {
-    width: 100%;
-    font-size: 14.4px;
-}
-
-.stadium {
-    text-align: left;
-}
-
-.competition {
-    text-align: right;
 }
 
 .video {
     width: 100%;
+    max-width: 100%;
+    height: auto;
     margin: 30px 0;
+    display: block;
+}
+
+.match {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+    padding: 5px 0px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.team-name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.team-score {
+    font-size: 50px;
+    font-weight: bold;
+    color: #0066ff;
+}
+
+.team-img {
+    width: 45px;
+    height: 45px;
+}
+
+.final-text {
+    color: red;
+    font-size: 13px;
+    font-weight:bolder;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0066ff;
+    color: white;
+    padding: 5px 24px;
+    font-size: 14px;
 }
 
 /* FORM */
 .second-sec {
-    margin-top: 20px;
-    margin-left: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 32px;
+    margin-right: 200px;
 }
 
-.newsletter {
-    background-color: #1a73e8;
-    width: 35%;
+.newsletter-form-container {
+    background-color: #1d66e6;
     color: white;
-    padding: 20px 0px 20px 20px;
-    margin-left: 150px;
-    margin-bottom: 60px;
+    padding: 20px 24px;
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.icon-cell {
-    width: 20px;
-    font-size: 16px;
+.newsletter-header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight:normal;
 }
 
-.text-cell {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.logo-cell {
-    width: 60px;
+.left-group {
+    display: flex;
+    align-items:center;
+    gap: 5px;
 }
 
 .champions-logo {
@@ -196,135 +216,327 @@ h1 {
 }
 
 .title-text {
-    font-size: 17.6px;
+    font-size: 18px;
     font-weight: bold;
-    text-align: left;
     width: 70%;
 }
 
+.newsletter-input {
+    display: flex;
+    width: 100%;
+}
+
 .email-input {
-    height: 32px;
+    width: 60%;
+    padding: 12px;
     border: none;
-    border-radius: 5px 0 0 5px;
-    font-size: 11.2px;
-    background-color: #4182e7;
-    margin-top: 10px;
-    padding-right: 100px;
-    margin: 0px;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+    background-color: #4285f4;
 }
 
 .subscribe-button {
-    border: none;
-    background-color: #0a0a60;
+    background-color: #0b0b6f;
     color: white;
-    font-weight: bold;
-    border-radius: 0 5px 5px 0;
-    font-size: 11.2px;
-    height: 35.2px;
-    padding: 0px 10px;
-    margin: 0;
+    padding: 0px 20px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    font-size: 13px;
+    font-weight:lighter;
+}
+
+.tags {
+    display: flex;
+    gap: 16px;
+    align-self: flex-start;
+    margin-left: 335px;
 }
 
 .small-button {
-    border: 2px solid #0b0b66;
-    background: white;
-    color: #0b0b66;
-    border-radius: 5px;
+    background-color: white;
+    color: #0b0b6f;
+    border: 2px solid #0b0b6f;
+    padding: 8px 16px;
+    border-radius: 6px;
     font-weight: bold;
-    height: 48px;
-    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.comments-section {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
 }
 
 .comments-button {
-    background: #1d66dd;
+    gap: 10px;
+    background-color: #1d66e6;
     color: white;
     border: none;
-    border-radius: 5px;
-    width: 58%;
-    font-size: 16px;
+    border-radius: 8px;
+    padding: 20px 16px;
+    font-size: 14px;
     font-weight: bold;
-    padding: 15px;
-    margin-bottom: 20px;
+    width: 100%;
 }
 
 /* FOOTER */
 .footer {
-    font-size: 11.2px;
-    color: #0b0b66;
-    padding: 40px 20px 10px 20px;
+    font-size: 13px;
+    padding: 40px 20px;
 }
 
-.footer-table {
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    color: #0b0b66;
-    margin-top: 10px;
+    padding: 20px 10px;
+}
+
+.footer-left {
+    flex: 1 1 50px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+.footer-logo {
+    color: #0b0b6f;
 }
 
 .footer-logo b {
-    font-size: 19.2px;
-    color: #0b0b66;
+    font-size: 25px;
 }
 
-.footer-logo div {
-    margin: 5px 0;
-    color: #0b0b66;
-}
-
-.social-icons {
+.sub-p {
+    font-size: 10px;
     margin-top: 10px;
 }
 
-.social-icons i {
-    font-size: 19.2px;
-    margin-right: 10px;
-    cursor: pointer;
-    color: #0b0b66;
-}
-
-.footer-column {
-    padding-top: 10px;
-    color: #0b0b66;
-    margin: 4px 0;
-    color: #3f3d3d;
-    cursor: pointer;
-}
-
-.footer-titles {
-    margin-bottom: 10px;
-    font-size: 15px;
-    color: #0b0b66;
+.social-icons {
+    display: flex;
+    gap: 12px;
+    font-size: 22px;
+    margin-top: 20px;
 }
 
 .footer-links {
-    padding-top: 30px;
+    margin-top: 20px;
 }
 
-.links-table div {
-    margin: 5px 0;
-    color: #0b0b66;
-    font-weight: bold;
-    cursor: pointer;
+.links-section {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 13px;
+    color: #0b0b6f;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 150px;
+    flex: 1;
+}
+
+.footer-titles {
+    color: #0b0b6f;
+    margin-bottom: 6px;
+}
+
+.line-2 {
+    border: none;
+    height: 1px;
+    background-color: #d3d3d3;
+    margin: 30px auto;         
+    width: 80%;                
 }
 
 .footer-bottom {
     text-align: center;
-    font-size: 13px;
-    color: #555;
-    padding: 10px 0 0 0;
+    font-size: 15px;
+    color: #666;
 }
 
-/* medias query mobile */
-@media (max-width: 768px) {
-    #menu-toggle {
-        display: inline-block;
+/* MEDIAS QUERY MOBILE */
+@media (max-width: 480px) {
+    .top-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
     }
 
-    .nav-table {
+    .middle-header {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .lower-header {
+        flex-wrap: wrap;
+        font-size: 11px;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .article-container {
+        width: 90%;
+        padding-right: 0;
+    }
+
+    .second-sec {
+        margin-right: 0;
+    }
+
+    .newsletter-form-container {
+        width: 90%;
+    }
+
+    .tags {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .comments-section {
+        width: 90%;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .footer-left {
+        padding-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column {
+        align-items: center;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .team {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .team-score {
+        font-size: 36px;
+    }
+
+    .email-input {
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    .subscribe-button {
+        border-radius: 4px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .newsletter-input {
+        flex-direction: column;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    .lower-header {
         display: none;
     }
+
     .line1 {
         display: none;
+    }
+}
+
+/* MEDIAS QUERY TABLET */
+@media (min-width: 481px) and (max-width: 768px) {
+    .top-header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .middle-header {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .lower-header {
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 12px;
+        gap: 10px;
+    }
+
+    .article-container {
+        width: 80%;
+        padding-right: 0;
+    }
+
+    .second-sec {
+        margin-right: 0;
+    }
+
+    .newsletter-form-container {
+        width: 80%;
+    }
+
+    .tags {
+        margin-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .comments-section {
+        width: 80%;
+    }
+
+    .footer-top {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .footer-left {
+        padding-left: 0;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .team {
+        gap: 20px;
+    }
+
+    .team-score {
+        font-size: 44px;
+    }
+
+    .newsletter-input {
+        flex-direction: row;
+    }
+
+    .email-input {
+        width: 70%;
+    }
+
+    .subscribe-button {
+        width: 30%;
     }
 }

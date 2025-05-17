@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=./css/normalize.css">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Tyc Sport</title>
@@ -11,282 +11,207 @@
 <body>
     <header>
         <div class="top-header">
-            <table>
-                <tr>
-                    <td>
-                        <a href="https://www.tycsports.com/agenda-deportiva-hoy.html">
-                            <i class="far fa-clock"></i> AGENDA
-                        </a>
-                    </td>
-                    <td>
-                        <a href="https://www.tycsports.com/estadisticas/liga-profesional-de-futbol.html">
-                            <i class="fas fa-chart-line"></i> ESTADÍSTICAS
-                        </a>
-                    </td>
-                    <td>
-                        <a href="https://www.tycsports.com/reels/index.html">
-                            <i class="far fa-play-circle"></i> REELS
-                        </a>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div class="line"></div>
-        <div class="middle-header">
-            <table>
-                <tr>
-                    <td><button class="icon-btn" id="menu-toggle"><i class="fas fa-bars"></i></button></td>
-                    <td><button class="icon-btn"><i class="fas fa-search"></i></button></td>
-                    <td><h2 class="logo">TyC Sports</h2></td>
-                    <td><button class="icon-btn">
-                        <i class="fas fa-bell"></i>
-                        <sup class="notif-count">3</sup>
-                        </button></td>
-                    <td><button class="login-btn">
-                        <i class="fas fa-user"></i> INGRESAR
-                        </button></td>
-                </tr>
-            </table>
-        </div>
-        <div class="line"></div>
-            <div class="lower-header">
-                <table  class="nav-table" cellspacing="15">
-                    <tr>
-                        <td><a>RIVER VS BARCELONA</a></td>
-                        <td><a>BOCA</a></td>
-                        <td><a>COPA LIBERTADORES</a></td>
-                        <td><a>COPA SUDAMERICANA</a></td>
-                        <td><a>CHAMPIONS LEAGUE</a></td>
-                        <td><a>SUDAMERICANO SUB 17</a></td>
-                    </tr>
-                </table>
+            <div class="top-header-left">
+                <a href="https://www.tycsports.com/agenda-deportiva-hoy.html">
+                    <i class="far fa-clock"></i> AGENDA
+                </a>
+                <a href="https://www.tycsports.com/estadisticas/liga-profesional-de-futbol.html">
+                    <i class="fas fa-chart-line"></i> ESTADÍSTICAS
+                </a>
+                <a href="https://www.tycsports.com/reels/index.html">
+                    <i class="far fa-play-circle"></i> REELS
+                </a>
+            </div>
+            <div class="top-header-right">
+                <span class="logo-text">TyC Sports</span>
+                <i class="fas fa-circle-half-stroke"></i>
             </div>
         </div>
+
+        <div class="line"></div>
+
+        <div class="middle-header">
+            <button class="icon-btn" id="menu-toggle"><i class="fas fa-bars"></i></button>
+            <button class="icon-btn"><i class="fas fa-search"></i></button>
+            <h2 class="logo">TyC Sports</h2>
+            <button class="icon-btn">
+                <i class="fas fa-bell"></i><sup class="notif-count">3</sup>
+            </button>
+            <button class="login-btn"><i class="fas fa-user"></i> INGRESAR</button>
+        </div>
+
+        <div class="line"></div>
+
+        <nav class="lower-header">
+            <a>RIVER VS BARCELONA</a>
+            <a>BOCA</a>
+            <a>COPA LIBERTADORES</a>
+            <a>COPA SUDAMERICANA</a>
+            <a>CHAMPIONS LEAGUE</a>
+            <a>SUDAMERICANO SUB 17</a>
+        </nav>
+
         <div class="line1"></div>
     </header>
-    <article>
-        <table class="table-article">
-            <tr>
-                <td><h1 class="titles">Con dos golazos de Rice de tiro libre, Arsenal aplastó al Real Madrid y sueña con dar el golpe</h1></td>
-            </tr>
-            <tr>
-                <td class="text">Los Gunners se impusieron por 3-0 al Merengue, en el Emirates Stadium, por la ida de los cuartos de final de la Champions. La revancha será el próximo miércoles, en el Santiago Bernabéu.</td>
-            </tr>
-            <tr>
-                <td id="date">08/04/2025 06:31 pm</td>
-            </tr>
-            <tr>
-                <td><img src="./media/arsenal.webp" alt=""></td>
-            </tr>
-            <tr>
-                <td id="caption"><i>Declan Rice marcó dos golazos de tiro libre para Arsenal ante Real Madrid. (Catherine Ivill - AMA/Getty Images)</i></td>
-            </tr>
-            <tr>
-                <td>
-                    <table class="match">
-                        <tr class="score-row">
-                            <td class="team-logo">
-                                <img class="team-img" src="https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg" alt="Arsenal" >
-                            </td>
-                            <td class="team-name">Arsenal</td>
-                            <td class="team-score">3</td>
-                            <td class="final-text">Fin</td>
-                            <td class="team-score">0</td>
-                            <td class="team-name">Real Madrid</td>
-                            <td class="team-logo">
-                                <img class="team-img" src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg" alt="Real Madrid" >
-                            </td>
-                        </tr>
-                        <tr class="info-row">
-                            <td colspan="7">
-                                <table class="info-table">
-                                    <tr>
-                                        <td class="stadium">Emirates Stadium Londres</td>
-                                        <td class="competition">UEFA Champions League - 2024–2025</td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr><td><div></div></td></tr>
-            <tr>
-                <td class="text"><b>Arsenal</b> goleó y se ilusiona con dar el gran golpe en la <b>Champions League:</b> aplastó por <b>3-0 al Real Madrid</b>, en el Emirates Stadium, en la ida de los cuartos de final. <b>Declan Rice</b> fue la figura, con dos golazos de tiro libre.</td>
-            </tr>
-            <tr><td><div></div></td></tr>
-            <tr>
-                <td class="text">
-                    En el inicio del encuentro, los Gunners controlaron la posesión de la pelota, pero el Merengue fue más peligroso: avisó con chances de Vinícius y Kylian Mbappé.
-                </td>
-            </tr>
-            <tr><td></td></tr>
-            <tr>
-                <td class="text">
-                    Sin embargo, el conjunto londinense fue una topadora en el segundo tiempo y encontró el camino <b>hacia el triunfo gracias a Declan Rice: frotó la lámpara y marcó dos golazos de tiro libre</b> a los 12 minutos y luego a los 25.
-                </td>
-            </tr>
-            <tr><td></td></tr><tr><td></td></tr>
-            <tr>
-                <td>
-                    <video controls class="video">
-                        <source src="./media/video_arsenal.mp4" type="video/mp4">
-                    </video>
-                </td>
-            </tr>
-            <tr><td></td></tr><tr><td></td></tr>
-            <tr>
-                <td class="text">Arsenal no se conformó con la diferencia de dos goles e insistió. Thibaut Courtois brilló abajo de los tres palos, pero no pudo impedir la goleada. A los 30', tras una gran jugada colectiva, Myles Lewis-Skelly <b>asistió a Mikel Merino, quien remató de zurda y puso el 3-0 para los locales.</b></td>
-            </tr>
-            <tr><td></td></tr><tr><td></td></tr>
-            <tr>
-                <td>
-                    <img src="./media/arsenal2.webp" alt="">
-                </td>
-            </tr>
-            <tr><td></td></tr><tr><td></td></tr>
-            <tr>
-                <td class="text">En lo que quedó del encuentro, el Merengue estuvo lejos del descuento y sufrió también la <b>expulsión de Eduardo Camavinga por doble amarilla.</b></td>
-            </tr>
-            <tr><td></td></tr>
-            <tr>
-                <td class="text">De esta manera, Arsenal aplastó por 3-0 a Real Madrid en la ida y se ilusiona con dar el gran golpe en la Champions League.</td>
-            </tr>
-            <tr>
-                <td class="text">
-                    <b>expulsión de Eduardo Camavinga por doble amarilla.</b> El ganador de la serie se enfrentará al PSG o al Aston Villa de Dibu Martínez en la próxima instancia.
-                </td>
-            </tr>
-            <tr>
-                <td><h2 class="titles">Lo mejor del triunfazo del Arsenal contra Real Madrid en la Champions League</h2></td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="./media/arsenal3.webp" alt="">
-                </td>
-            </tr>
-        </table>
+
+     <article class="article">
+        <div class="article-container">
+            <h1 class="titles">Con dos golazos de Rice de tiro libre, Arsenal aplastó al Real Madrid y sueña con dar el golpe</h1>
+            <p class="text">Los Gunners se impusieron por 3-0 al Merengue, en el Emirates Stadium, por la ida de los cuartos de final de la Champions. La revancha será el próximo miércoles, en el Santiago Bernabéu.</p>
+            <div id="date">08/04/2025 06:31 pm</div>
+            <img class="video" src="./media/arsenal.webp" alt="">
+            <div id="caption"><i>Declan Rice marcó dos golazos de tiro libre para Arsenal ante Real Madrid. (Catherine Ivill - AMA/Getty Images)</i></div>
+
+            <div class="match">
+                <div class="team">
+                    <img class="team-img" src="https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg" alt="Arsenal">
+                    <span class="team-name">Arsenal</span>
+                    <span class="team-score">3</span>
+                </div>
+                <span class="final-text">Fin</span>
+                <div class="team">
+                    <span class="team-score">0</span>
+                    <span class="team-name">Real Madrid</span>
+                    <img class="team-img" src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg" alt="Real Madrid">
+                </div>
+            </div>
+            <div class="info-row">
+                <span class="stadium">Emirates Stadium Londres</span>
+                <span class="competition">UEFA Champions League - 2024–2025</span>
+            </div>
+            <div class="text">
+                <p><b>Arsenal</b> goleó y se ilusiona con dar el gran golpe en la <b>Champions League:</b> aplastó por <b>3-0 al Real Madrid</b>, en el Emirates Stadium, en la ida de los cuartos de final. <b>Declan Rice</b> fue la figura, con dos golazos de tiro libre.</p>
+                <p>En el inicio del encuentro, los Gunners controlaron la posesión de la pelota, pero el Merengue fue más peligroso: avisó con chances de Vinícius y Kylian Mbappé.</p>
+                <p>Sin embargo, el conjunto londinense fue una topadora en el segundo tiempo y encontró el camino <b>hacia el triunfo gracias a Declan Rice: frotó la lámpara y marcó dos golazos de tiro libre</b> a los 12 minutos y luego a los 25.</p>
+            </div>
+            <video controls class="video">
+                <source src="./media/video_arsenal.mp4" type="video/mp4">
+            </video>
+            <div class="text">
+                <p>Arsenal no se conformó con la diferencia de dos goles e insistió. Thibaut Courtois brilló abajo de los tres palos, pero no pudo impedir la goleada. A los 30', tras una gran jugada colectiva, Myles Lewis-Skelly <b>asistió a Mikel Merino, quien remató de zurda y puso el 3-0 para los locales</b>.</p>
+            </div>
+            <div>
+                <img class="video" src="./media/arsenal2.webp" alt="">
+            </div>
+            <div class="text">
+                <p>En lo que quedó del encuentro, el Merengue estuvo lejos del descuento y sufrió también la <b>expulsión de Eduardo Camavinga por doble amarilla.</b></p>
+                <p>De esta manera, Arsenal aplastó por 3-0 a Real Madrid en la ida y se ilusiona con dar el gran golpe en la Champions League.</p>
+                <p><b>expulsión de Eduardo Camavinga por doble amarilla.</b> El ganador de la serie se enfrentará al PSG o al Aston Villa de Dibu Martínez en la próxima instancia.</p>
+            </div>
+            <h2 class="titles">Lo mejor del triunfazo del Arsenal contra Real Madrid en la Champions League</h2>
+            <div>
+                <img class="video" src="./media/arsenal3.webp" alt="">
+            </div>
+        </div>
     </article>
+
     <section class="second-sec">
-        <form>
-            <table class="newsletter">
-                <tr class="newsletter-header">
-                    <td class="icon-cell">
-                        <i class="fas fa-newspaper"></i>
-                    </td>
-                    <td class="text-cell">NO TE PIERDAS NADA</td>
-                    <td class="logo-cell">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/UEFA_Champions_League_logo_2.svg/120px-UEFA_Champions_League_logo_2.svg.png" alt="Champions League" class="champions-logo">
-                    </td>
-                </tr>
-                <tr class="newsletter-title">
-                    <td></td>
-                    <td class="title-text">Recibí las últimas noticias de Champions League ¡y más!</td>
-                    <td></td>
-                </tr>
-                <tr class="newsletter-form">
-                    <td></td>
-                    <td>
-                        <input type="email" placeholder="Ingresa tu email..." class="email-input">
-                        <button type="submit" class="subscribe-button">SUSCRIBITE</button>
-                    </td>
-                    <td></td>
-                </tr>
-            </table>
+        <form class="newsletter-form-container">
+            <div class="newsletter-header">
+                <div class="left-group">
+                    <i class="fas fa-newspaper" style="font-size: 20px;"></i>
+                    <div class="text-cell">NO TE PIERDAS NADA</div>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bf/UEFA_Champions_League_logo_2.svg/120px-UEFA_Champions_League_logo_2.svg.png" alt="Champions League" class="champions-logo">
+            </div>
+
+            <div class="title-text">Recibí las últimas noticias de Champions League ¡y más!</div>
+
+            <div class="newsletter-input">
+                <input type="email" placeholder="Ingresa tu email..." class="email-input">
+                <button type="submit" class="subscribe-button">SUSCRIBITE</button>
+            </div>
         </form>
-        <div>
+
+        <div class="tags">
             <button class="small-button">CHAMPIONS LEAGUE</button>
             <button class="small-button">FÚTBOL INTERNACIONAL</button>
         </div>
 
-        <div>
+        <div class="comments-section">
             <button class="comments-button">
                 <i class="fas fa-comment-dots"></i> VER COMENTARIOS
             </button>
         </div>
     </section>
-    <footer class="footer">
-        <table class="footer-table">
-            <div class="line"></div>
-            <tr class="footer-top">
-                <td class="footer-logo">
-                    <b>TyC Sports</b>
-                    <div>© de Tele Red Imagen S.A. 2024</div>
-                    <div class="social-icons">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-x-twitter"></i>
-                        <i class="fab fa-youtube"></i>
-                    </div>
-                </td>
-                <td class="footer-column">
-                    <div class="footer-titles"><b>Agenda</b></div>
-                    <div>Agenda Deportiva Hoy</div>
-                    <div>Últimas noticias</div>
-                    <div>Lionel Messi</div>
-                    <div>Diego Armando Maradona</div>
-                    <div>Videos</div>
-                </td>
-                <td class="footer-column">
-                    <div class="footer-titles"><b>Fútbol Argentino</b></div>
-                    <div>Selección Argentina</div>
-                    <div>Liga Profesional de Fútbol</div>
-                    <div>Tabla de Posiciones</div>
-                    <div>Ascenso</div>
-                    <div>Copa Argentina</div>
-                </td>
-                <td class="footer-column">
-                    <div class="footer-titles"><b>Fútbol Internacional</b></div>
-                    <div>Copa Libertadores</div>
-                    <div>Copa Sudamericana</div>
-                    <div>Fútbol de América</div>
-                    <div>Fútbol de España</div>
-                    <div>Fútbol de Italia</div>
-                    <div>Fútbol de Inglaterra</div>
-                    <div>Champions League</div>
-                    <div>Europa League</div>
-                </td>
-                <td class="footer-column">
-                    <div class="footer-titles"><b>Más deportes</b></div>
-                    <div>Automovilismo</div>
-                    <div>Básquet</div>
-                    <div>Rugby</div>
-                    <div>Tenis</div>
-                    <div>Voley</div>
-                    <div>Polideportivo</div>
-                    <div>Running</div>
-                    <div>Boxeo</div>
-                    <div>eSports</div>
-                </td>
-            </tr>
-            <tr class="footer-links">
-                <td colspan="5">
-                    <table class="links-table">
-                        <tr>
-                            <td>
-                                <div><b>Interés General</b></div>
-                                <div><b>Gaming</b></div>
-                                <div><b>Mediakit</b></div>
-                                <div><b>Jugando es mejor</b></div>
-                                <div><b>Sitemap</b></div>
-                                <div><b>Políticas de Privacidad</b></div>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="5"><hr class="line-2"></td>
-            </tr>
-            <tr class="footer-bottom">
-                <td colspan="5">
-                    Grupo Clarín | Clarín | Olé | EntreMujeres | VíaPaís |
-                    La Voz del Interior | TN | Ciudad | El Trece TV |
-                    Mitre | La 100 | Cienradios
-                </td>
-            </tr>
-        </table>
-    </footer>
 
+<footer class="footer">
+    <div class="line"></div>
+
+    <div class="footer-top">
+        <div class="footer-left">
+            <div class="footer-logo">
+                <b>TyC Sports</b>
+                <div class="sub-p">© de Tele Red Imagen S.A. 2024</div>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-x-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="links-section">
+                    <b>Interés General</b>
+                    <b>Gaming</b>
+                    <b>Mediakit</b>
+                    <b>Jugando es mejor</b>
+                    <b>Sitemap</b>
+                    <b>Políticas de Privacidad</b>
+                </div>
+            </div>
+        </div>
+        <div class="footer-column">
+            <div class="footer-titles"><b>Agenda</b></div>
+            <div>Agenda Deportiva Hoy</div>
+            <div>Últimas noticias</div>
+            <div>Lionel Messi</div>
+            <div>Diego Armando Maradona</div>
+            <div>Videos</div>
+        </div>
+
+        <div class="footer-column">
+            <div class="footer-titles"><b>Fútbol Argentino</b></div>
+            <div>Selección Argentina</div>
+            <div>Liga Profesional de Fútbol</div>
+            <div>Tabla de Posiciones</div>
+            <div>Ascenso</div>
+            <div>Copa Argentina</div>
+        </div>
+
+        <div class="footer-column">
+            <div class="footer-titles"><b>Fútbol Internacional</b></div>
+            <div>Copa Libertadores</div>
+            <div>Copa Sudamericana</div>
+            <div>Fútbol de América</div>
+            <div>Fútbol de España</div>
+            <div>Fútbol de Italia</div>
+            <div>Fútbol de Inglaterra</div>
+            <div>Champions League</div>
+            <div>Europa League</div>
+        </div>
+
+        <div class="footer-column">
+            <div class="footer-titles"><b>Más deportes</b></div>
+            <div>Automovilismo</div>
+            <div>Básquet</div>
+            <div>Rugby</div>
+            <div>Tenis</div>
+            <div>Voley</div>
+            <div>Polideportivo</div>
+            <div>Running</div>
+            <div>Boxeo</div>
+            <div>eSports</div>
+        </div>
+    </div>
+
+    <hr class="line-2">
+
+    <div class="footer-bottom">
+        Grupo Clarín | Clarín | Olé | EntreMujeres | VíaPaís |
+        La Voz del Interior | TN | Ciudad | El Trece TV |
+        Mitre | La 100 | Cienradios
+    </div>
+</footer>
 </body>
 </html>
