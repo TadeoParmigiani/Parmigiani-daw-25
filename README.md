@@ -10,4 +10,4 @@
 - **Actividad 3**: HTML Semántico  
 - **Actividad 4**: HTML y CSS  
 - **Actividad 5**: HTML y CSS (Box Model y Media Queries)  ⚠️ _Nota: Tuve que sacar todo el contenido de la carpeta `clase_05` para que GitHub Pages pueda renderizar `index.html`._
-
+- **Actividad 6**: HTML y CSS (Flexbox y Media Queries completo)
