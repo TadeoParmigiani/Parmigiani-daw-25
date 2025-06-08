@@ -221,6 +221,10 @@ h1 {
     width: 70%;
 }
 
+#logo-form{
+    font-size: 20px;
+}
+
 .newsletter-input {
     display: flex;
     width: 100%;
