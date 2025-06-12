@@ -129,13 +129,3 @@ function actualizarTitulo() {
   }
 }
 
-// Actualiza cuando escribe y cuando entra al campo
-inputNombre.addEventListener("keydown", () => {
-  actualizarTitulo()
-});
-inputNombre.addEventListener("focus", actualizarTitulo);
-
-function mostrarModal(mensaje) {
-  document.getElementById('mensaje').innerHTML = mensaje;
-  document.getElementById('modal').className = 'mostrar';
-}
