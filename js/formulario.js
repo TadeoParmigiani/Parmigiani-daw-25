@@ -1,15 +1,30 @@
-const campos = [
+var campos = [
   "nombre", "email", "contrasena", "repetir",
   "edad", "telefono", "direccion", "ciudad",
   "codigoPostal", "dni"
 ]
 
+// Cargar datos del LocalStorage 
+window.onload = function() {
+  var datosGuardados = localStorage.getItem('datosFormulario');
+  if (datosGuardados) {
+    var datos = JSON.parse(datosGuardados);
+    campos.forEach(campo => {
+        var input = document.getElementById(campo);
+        if (datos[campo] && input) {
+          input.value = datos[campo];
+        }
+    });
+    actualizarTitulo(); 
+  }
+}
+
 // Asignar eventos a cada campo
 campos.forEach(campo => {
-  const input = document.getElementById(campo)
+  var input = document.getElementById(campo)
 
   input.addEventListener("blur", () => {
-    const mensaje = validarCampo(campo, input.value)
+    var mensaje = validarCampo(campo, input.value)
     mostrarError(campo, mensaje)
   })
 
@@ -18,29 +33,110 @@ campos.forEach(campo => {
   })
 })
 
-// Validar todos los campos al enviar
+// Validar 
 document.getElementById("formulario").addEventListener("submit", function (e) {
   e.preventDefault()
-  let errores = []
-  let datos = []
+  var errores = []
+  var datosFormulario = {}
 
   campos.forEach(campo => {
-    const input = document.getElementById(campo)
-    const mensaje = validarCampo(campo, input.value)
+    var input = document.getElementById(campo)
+    var mensaje = validarCampo(campo, input.value)
     if (mensaje) {
       mostrarError(campo, mensaje)
       errores.push(`${campo}: ${mensaje}`)
     } else {
-      datos.push(`${campo}: ${input.value}`)
+      datosFormulario[campo] = input.value
     }
   })
 
   if (errores.length === 0) {
-    alert("Formulario enviado correctamente:\n\n" + datos.join("\n"))
+    enviarDatos(datosFormulario)
   } else {
     alert("Errores en el formulario:\n\n" + errores.join("\n"))
   }
 })
+
+// Función para enviar datos al servidor
+function enviarDatos(datos) {
+  
+  var baseUrl = 'https://jsonplaceholder.typicode.com/posts';
+  var params = new URLSearchParams();
+  
+  // Agregar todos los datos como parámetros
+  Object.keys(datos).forEach(key => {
+    params.append(key, datos[key]);
+  });
+  
+  var urlCompleta = `${baseUrl}?${params.toString()}`;
+  
+  // Realizar la petición 
+  fetch(urlCompleta, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    }
+  })
+  .then(response => {
+    if (response.ok) {
+      return response.json();
+    } else {
+      throw new Error(`Error HTTP: ${response.status} - ${response.statusText}`);
+    }
+  })
+  .then(data => {
+    manejarExito(data, datos);
+  })
+  .catch(error => {
+    manejarError(error);
+  });
+}
+function formatearClaves(datos) {
+  const map = {
+    nombre: "name",
+    email: "email",
+    contrasena: "password",
+    repetir: "confirmPassword",
+    edad: "age",
+    telefono: "telephone",
+    direccion: "address",
+    ciudad: "city",
+    codigoPostal: "postalcode",
+    dni: "dni"
+  };
+
+  const nuevo = {};
+  for (let clave in datos) {
+    nuevo[map[clave] || clave] = datos[clave];
+  }
+  return nuevo;
+}
+// Función para manejar el éxito del envío
+function manejarExito(respuestaServidor, datosOriginales) {
+
+  localStorage.setItem('datosFormulario', JSON.stringify(datosOriginales));
+  
+  var mensaje = `
+    <h3>Successfull Subscription! :)</h3>
+    <pre style="text-align: left;">${JSON.stringify(formatearClaves(datosOriginales), null, 2)}</pre>
+  `;
+  
+  mostrarModal(mensaje);
+}
+
+// Función para manejar errores del envío
+function manejarError(error) {
+  var mensaje = `
+    <h3>subscription error</h3>
+    <p>Ha ocurrido un error al enviar los datos:</p>
+    <div class="error-details">
+      <p><strong>Error:</strong> ${error.message}</p>
+    </div>
+    <p>Por favor, intenta nuevamente más tarde.</p>
+  `;
+  
+  mostrarModal(mensaje);
+}
 
 // Mostrar u ocultar el mensaje de error
 function mostrarError(campo, mensaje) {
@@ -117,11 +213,11 @@ function validarCampo(campo, valor) {
   return ""
 }
 
-const inputNombre = document.getElementById("nombre");
-const tituloForm = document.getElementById("titulo-form");
+var inputNombre = document.getElementById("nombre");
+var tituloForm = document.getElementById("titulo-form");
 
 function actualizarTitulo() {
-  const valor = inputNombre.value.trim();
+  var valor = inputNombre.value.trim();
   if (valor) {
     tituloForm.textContent = "HOLA " + valor.toUpperCase();
   } else {
@@ -131,6 +227,27 @@ function actualizarTitulo() {
 
 // Actualiza cuando escribe y cuando entra al campo
 inputNombre.addEventListener("keydown", () => {
-  actualizarTitulo()
+  setTimeout(actualizarTitulo, 10);
 });
+inputNombre.addEventListener("input", actualizarTitulo);
 inputNombre.addEventListener("focus", actualizarTitulo);
+
+document.getElementById('cerrar').addEventListener('click', () => {
+  document.getElementById('modal').classList.add('oculto');
+  document.getElementById('modal').classList.remove('mostrar');
+});
+
+// Función para mostrar 
+function mostrarModal(mensaje) {
+  document.getElementById('mensaje').innerHTML = mensaje;
+  document.getElementById('modal').classList.remove('oculto');
+  document.getElementById('modal').classList.add('mostrar');
+
+}
+
+// Función para ocultar 
+document.getElementById('cerrar').onclick = function() {
+document.getElementById('modal').classList.add('oculto');
+document.getElementById('modal').classList.remove('mostrar');
+
+};

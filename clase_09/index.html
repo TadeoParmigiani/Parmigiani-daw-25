@@ -7,13 +7,6 @@
   <link rel="stylesheet" href="./css/formulario.css" />
 </head>
 <body>
-  <div id="modal" class="modal oculto">
-    <div class="modal-contenido">
-      <span id="cerrar" class="cerrar">×</span>
-      <h3 id="modal-titulo"></h3>
-      <pre id="mensaje"></pre>
-    </div>
-  </div>
 <form class="formulario" id="formulario">
   <h2 class="titulo-form" id="titulo-form">HOLA</h2>
 
@@ -21,19 +14,19 @@
     <div class="columna">
       <div class="campo">
         <label class="etiqueta" for="nombre">Nombre completo</label>
-        <input class="entrada" type="text" id="nombre" />
+        <input class="entrada" type="text" id="nombre" name="nombre" />
         <span class="error" id="error-nombre"></span>
       </div>
 
       <div class="campo">
         <label class="etiqueta" for="email">Email</label>
-        <input class="entrada" type="email" id="email"  />
+        <input class="entrada" type="email" id="email" name="email" />
         <span class="error" id="error-email"></span>
       </div>
 
       <div class="campo">
         <label class="etiqueta" for="contrasena">Contraseña</label>
-        <input class="entrada" type="password" id="contrasena"  />
+        <input class="entrada" type="password" id="contrasena" />
         <span class="error" id="error-contrasena"></span>
       </div>
 
