@@ -1,92 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Suscripciónn</title>
-  <link rel="stylesheet" href="./css/formulario.css" />
-</head>
-<body>
-  <div id="modal" class="modal oculto">
-    <div class="modal-contenido">
-      <span id="cerrar" class="cerrar">×</span>
-      <h3 id="modal-titulo"></h3>
-      <pre id="mensaje"></pre>
-    </div>
-  </div>
-<form class="formulario" id="formulario">
-  <h2 class="titulo-form" id="titulo-form">HOLA</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick & Morty Explorer</title>
+    <link rel="stylesheet" href=./css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-  <div class="campos-grid">
-    <div class="columna">
-      <div class="campo">
-        <label class="etiqueta" for="nombre">Nombre completo</label>
-        <input class="entrada" type="text" id="nombre" />
-        <span class="error" id="error-nombre"></span>
-      </div>
+  <body>
 
-      <div class="campo">
-        <label class="etiqueta" for="email">Email</label>
-        <input class="entrada" type="email" id="email"  />
-        <span class="error" id="error-email"></span>
-      </div>
+    <section class="acciones">
+    <h1 class="title">Rick & Morty</h1>
+      <button class="button" id="btn-todos">Personajes</button>
 
-      <div class="campo">
-        <label class="etiqueta" for="contrasena">Contraseña</label>
-        <input class="entrada" type="password" id="contrasena"  />
-        <span class="error" id="error-contrasena"></span>
-      </div>
+      <form class="form" id="form-filtros">
+        <fieldset class="form-f">
+          <legend class="title-f">Filtrar</legend>
 
-      <div class="campo">
-        <label class="etiqueta" for="repetir">Contraseña</label>
-        <input class="entrada" type="password" id="repetir" />
-        <span class="error" id="error-repetir"></span>
-      </div>
+          <label for="name">Nombre</label>
+            <input type="text" name="name" placeholder="Rick" />
+          
 
-      <div class="campo">
-        <label class="etiqueta" for="edad">Edad</label>
-        <input class="entrada" type="number" id="edad" />
-        <span class="error" id="error-edad"></span>
-      </div>
-    </div>
+          <label for="status">Estado</label>
+            <select name="status">
+              <option value="">--cualquiera--</option>
+              <option value="alive">Vivo</option>
+              <option value="dead">Muerto</option>
+              <option value="unknown">Desconocido</option>
+            </select>
 
-    <div class="columna">
-      <div class="campo">
-        <label class="etiqueta" for="telefono">Teléfono</label>
-        <input class="entrada" type="text" id="telefono" />
-        <span class="error" id="error-telefono"></span>
-      </div>
+            <label for="species">Especie</label>
+            <input type="text" name="species" placeholder="Human" />
+      
 
-      <div class="campo">
-        <label class="etiqueta" for="direccion">Dirección</label>
-        <input class="entrada" type="text" id="direccion" />
-        <span class="error" id="error-direccion"></span>
-      </div>
+            <label for="type">Tipo</label>
+            <input type="text" name="type" placeholder="Parasite" />
 
-      <div class="campo">
-        <label class="etiqueta" for="ciudad">Ciudad</label>
-        <input class="entrada" type="text" id="ciudad" />
-        <span class="error" id="error-ciudad"></span>
-      </div>
+            <label for="gender">Género</label>
+            <select name="gender">
+              <option value="">--cualquiera--</option>
+              <option value="female">Femenino</option>
+              <option value="male">Masculino</option>
+              <option value="genderless">Sin género</option>
+              <option value="unknown">Desconocido</option>
+            </select>
 
-      <div class="campo">
-        <label class="etiqueta" for="codigoPostal">Código Postal</label>
-        <input class="entrada" type="text" id="codigoPostal" />
-        <span class="error" id="error-codigoPostal"></span>
-      </div>
+          <button type="submit">Buscar</button>
+        </fieldset>
+      </form>
+    </section>
 
-      <div class="campo">
-        <label class="etiqueta" for="dni">DNI</label>
-        <input class="entrada" type="text" id="dni" />
-        <span class="error" id="error-dni"></span>
-      </div>
-    </div>
-  </div>
+    <section id="mensaje" class="mensaje"></section>
+    <section id="grid" class="grid"></section>
 
-  <div class="boton-container">
-    <button type="submit" class="boton-enviar">Enviar</button>
-  </div>
-</form>
-<script src="./js/formulario.js"></script>
-</body>
+    <script src="js/app.js"></script>
+  </body>
 </html>

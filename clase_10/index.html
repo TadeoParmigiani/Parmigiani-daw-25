@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suscripciónn</title>
+  <link rel="stylesheet" href="./css/formulario.css" />
+</head>
+<body>
+  <div id="modal" class="modal oculto">
+    <div class="modal-contenido">
+      <span id="cerrar" class="cerrar">×</span>
+      <h3 id="modal-titulo"></h3>
+      <pre id="mensaje"></pre>
+    </div>
+  </div>
+<form class="formulario" id="formulario">
+  <h2 class="titulo-form" id="titulo-form">HOLA</h2>
+
+  <div class="campos-grid">
+    <div class="columna">
+      <div class="campo">
+        <label class="etiqueta" for="nombre">Nombre completo</label>
+        <input class="entrada" type="text" id="nombre" />
+        <span class="error" id="error-nombre"></span>
+      </div>
+
+      <div class="campo">
+        <label class="etiqueta" for="email">Email</label>
+        <input class="entrada" type="email" id="email"  />
+        <span class="error" id="error-email"></span>
+      </div>
+
+      <div class="campo">
+        <label class="etiqueta" for="contrasena">Contraseña</label>
+        <input class="entrada" type="password" id="contrasena"  />
+        <span class="error" id="error-contrasena"></span>
+      </div>
+
+      <div class="campo">
+        <label class="etiqueta" for="repetir">Contraseña</label>
+        <input class="entrada" type="password" id="repetir" />
+        <span class="error" id="error-repetir"></span>
+      </div>
+
+      <div class="campo">
+        <label class="etiqueta" for="edad">Edad</label>
+        <input class="entrada" type="number" id="edad" />
+        <span class="error" id="error-edad"></span>
+      </div>
+    </div>
+
+    <div class="columna">
+      <div class="campo">
+        <label class="etiqueta" for="telefono">Teléfono</label>
+        <input class="entrada" type="text" id="telefono" />
+        <span class="error" id="error-telefono"></span>
+      </div>
+
+      <div class="campo">
+        <label class="etiqueta" for="direccion">Dirección</label>
+        <input class="entrada" type="text" id="direccion" />
+        <span class="error" id="error-direccion"></span>
+      </div>
+
+      <div class="campo">
+        <label class="etiqueta" for="ciudad">Ciudad</label>
+        <input class="entrada" type="text" id="ciudad" />
+        <span class="error" id="error-ciudad"></span>
+      </div>
+
+      <div class="campo">
+        <label class="etiqueta" for="codigoPostal">Código Postal</label>
+        <input class="entrada" type="text" id="codigoPostal" />
+        <span class="error" id="error-codigoPostal"></span>
+      </div>
+
+      <div class="campo">
+        <label class="etiqueta" for="dni">DNI</label>
+        <input class="entrada" type="text" id="dni" />
+        <span class="error" id="error-dni"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="boton-container">
+    <button type="submit" class="boton-enviar">Enviar</button>
+  </div>
+</form>
+<script src="./js/formulario.js"></script>
+</body>
+</html>

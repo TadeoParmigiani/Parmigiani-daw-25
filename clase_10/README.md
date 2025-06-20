@@ -13,4 +13,3 @@
 - **Actividad 6**: HTML y CSS (Flexbox y Media Queries completo)
 - **Actividad 9**: JAVASCRIPT - FORMULARIO (Eventos blur y focus)
 - **Actividad 10**: JAVASCRIPT - PETICIONES FECHT, PROMESAS Y API
-- **Actividad 11**: JAVASCRIPT - API DE RICK AND MORTY
