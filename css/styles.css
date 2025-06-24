@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica,;
   background-color: #f4f4f4;
   color: #222222;
 }
@@ -21,7 +20,6 @@ body {
   padding: 20px;
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -75,7 +73,6 @@ select {
   margin-top: 4px;
 }
 
-
 .mensaje {
   text-align: center;
   font-size: 16px;
@@ -83,8 +80,7 @@ select {
   color: #555555;
 }
 
-
-.grid {
+.card {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rick & Morty Explorer</title>
     <link rel="stylesheet" href=./css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
@@ -16,7 +16,7 @@
 
       <form class="form" id="form-filtros">
         <fieldset class="form-f">
-          <legend class="title-f">Filtrar</legend>
+          
 
           <label for="name">Nombre</label>
             <input type="text" name="name" placeholder="Rick" />
@@ -24,7 +24,7 @@
 
           <label for="status">Estado</label>
             <select name="status">
-              <option value="">--cualquiera--</option>
+              <option value="">cualquiera</option>
               <option value="alive">Vivo</option>
               <option value="dead">Muerto</option>
               <option value="unknown">Desconocido</option>
@@ -39,7 +39,7 @@
 
             <label for="gender">Género</label>
             <select name="gender">
-              <option value="">--cualquiera--</option>
+              <option value="">cualquiera</option>
               <option value="female">Femenino</option>
               <option value="male">Masculino</option>
               <option value="genderless">Sin género</option>
@@ -52,7 +52,7 @@
     </section>
 
     <section id="mensaje" class="mensaje"></section>
-    <section id="grid" class="grid"></section>
+    <section id="card" class="card"></section>
 
     <script src="js/app.js"></script>
   </body>
