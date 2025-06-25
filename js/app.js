@@ -1,6 +1,6 @@
 var BASE_URL = "https://rickandmortyapi.com/api/character";
 
-var grid = document.getElementById("card");
+var grid = document.getElementById("grid");
 var mensaje = document.getElementById("mensaje");
 var btnTodos = document.getElementById("btn-todos");
 var form = document.getElementById("form-filtros");
@@ -16,7 +16,7 @@ function mostrarPersonajes(lista) {
 
   lista.forEach((personaje) => {
     var card = document.createElement("div");
-    card.className = "card";
+    card.className = "grid";
     card.innerHTML = `
       <img src="${personaje.image}" alt="${personaje.name}">
       <h2>${personaje.name}</h2>
